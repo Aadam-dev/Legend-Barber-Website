@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+/* utilities */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-primary {
+  color: #fda47a;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #f1a792;
+  padding: 0.75rem 1.2rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #fda47a;
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.bg-light {
+  background-color: #eee;
+}
+
+.bg-dark {
+  background-color: #3f4441;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: rgb(246, 239, 239);
+  border-radius: 5px;
+}
+.card-grey {
+  background-color: rgb(255, 242, 242);
+  border-radius: 5px;
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #3f4441;
+  color: #fff;
+  justify-content: space-between;
+  padding: 1.3rem;
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  padding: 0.75rem;
+  margin: 0.25rem;
+  color: #fff;
+}
+
+#navbar ul li a:hover {
+  /* background-color: #ffdecf; */
+  background-color: #f1a792;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* showcase */
+#showcase {
+  height: 100vh;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  padding: 1rem;
+  /* overlay */
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* section: about */
+#about {
+  display: flex;
+}
+
+#about div {
+  flex: 1;
+}
+
+#about div h2 {
+  margin-bottom: 1.5rem;
+}
+#about div p {
+  margin-bottom: 1.5rem;
+}
+
+#about #about-ceo div img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+#about #about-ceo .card-grey div {
+  margin-right: 1.2rem;
+}
+
+#about #about-ceo .card-grey {
+  display: flex;
+}
+
+#about #about-ceo .card-grey div a {
+  margin: 0 auto;
+}
+
+#about .testimonial .testimonial-flex img {
+  border-radius: 50%;
+  width: 100px;
+  margin-right: 2rem;
+}
+
+#about .testimonial .testimonial-flex {
+  display: flex;
+}
+
+/* section: services */
+#services .services-img {
+  border-radius: 50%;
+  width: 150px;
+  margin-right: 2rem;
+}
+
+#services .items {
+  display: flex;
+  padding: 1.5rem;
+}
+
+#services .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#services .services-img {
+  margin-bottom: 1rem;
+}
+
+/* section: portfolio */
+#portfolio div .s1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+}
+#portfolio div .s2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#portfolio div .img-width {
+  width: 300px;
+  height: 300px;
+}
+
+#portfolio .img-card {
+  border: 1rem rgb(246, 239, 239) solid;
+  border-radius: 10px;
+}
+
+/* section: contact */
+#contact #flex {
+  display: flex;
+}
+
+#contact form {
+  display: flex;
+  justify-content: center;
+}
+
+#contact form > div {
+  font-size: 1.2rem;
+  border-radius: 0;
+  margin: 0.75rem 0.5rem 1.5rem;
+  padding: 0.75rem;
+}
+
+#contact .card form > div label {
+  border: 1.5px solid black;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#contact .card form > div .toggler {
+  display: none;
+}
+#contact .card form > div .toggler-2 {
+  display: none;
+}
+#contact .card form > div .toggler-3 {
+  display: none;
+}
+
+#contact .card form > div .toggler:checked + label {
+  background-color: #fda47a;
+  border: 1.5px solid rgb(246, 239, 239);
+  transition: background-color 0.3s ease-in;
+}
+#contact .card form > div .toggler-2:checked + label {
+  background-color: #fda47a;
+  border: 1.5px solid rgb(246, 239, 239);
+  transition: background-color 0.3s ease-in;
+}
+#contact .card form > div .toggler-3:checked + label {
+  background-color: #fda47a;
+  border: 1.5px solid rgb(246, 239, 239);
+  transition: background-color 0.4s ease-in;
+}
+
+#contact #form-group {
+  display: block;
+}
+
+#contact #form-group input {
+  margin-bottom: 0.75rem;
+  outline-color: none;
+  width: 100%;
+  height: 30px;
+  border: #f1a792 1px solid;
+  background-color: transparent;
+}
+
+#contact #form-group textarea {
+  width: 100%;
+  height: 100px;
+  outline-color: none;
+  border: #f1a792 1px solid;
+  background-color: transparent;
+}
+
+#contact .map {
+  margin-left: 0.25rem;
+  flex: 2;
+}
+
+/* section: footer */
+#footer i {
+  background-color: #f1a792;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-top: 0.75rem;
+}

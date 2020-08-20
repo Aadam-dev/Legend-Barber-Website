@@ -1,0 +1,121 @@
+#navbar ul {
+  align-items: center;
+  justify-content: center;
+}
+
+#showcase .showcase-content > a {
+  margin-bottom: 1.2rem;
+}
+
+#about {
+  flex-direction: column;
+}
+
+#about #about-ceo .card-grey {
+  flex-direction: column;
+}
+
+#about #about-ceo div img {
+  width: 100px;
+}
+
+#about #about-ceo .card-grey div a {
+  margin-bottom: 1.5rem;
+}
+
+#about .exp {
+  display: none;
+}
+
+#services .services-img {
+  width: 150px;
+}
+
+#portfolio div .s1 {
+  flex-direction: column;
+}
+
+#portfolio div .s1 > div {
+  width: 480px;
+  height: 330px;
+  margin: 0.75rem auto;
+}
+
+#portfolio div .s2 {
+  display: none;
+}
+
+#portfolio div .img-width {
+  width: 450px;
+  height: 300px;
+}
+
+#contact #flex {
+  flex-direction: column;
+}
+
+#contact form > div {
+  font-size: 0.75rem;
+  border-radius: 0;
+  margin: 0.5rem 0 0.5rem;
+  padding: 0.75rem;
+}
+.map {
+  flex-direction: column;
+  height: 400px;
+}
+
+@media (max-width: 568px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  #navbar .logo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #navbar ul li a {
+    padding: 0.25rem;
+    margin: 0;
+    color: #fff;
+  }
+
+  #showcase .showcase-content {
+    height: 100%;
+    top: 113px;
+  }
+
+  #services .services-img {
+    display: none;
+  }
+
+  #services .items {
+    display: block;
+    padding: 1rem;
+  }
+
+  #services .items .item {
+    display: flex;
+    text-align: center;
+    margin: 0.2rem auto;
+  }
+
+  #portfolio div .s1 > div {
+    width: 330px;
+    height: 180px;
+    margin: 0.75rem auto;
+  }
+
+  #portfolio div .img-width {
+    width: 300px;
+    height: 150px;
+  }
+
+  #contact form > div {
+    font-size: 0.65rem;
+    border-radius: 0;
+    margin: 0.4rem 0 0.4rem;
+    padding: 0.5rem;
+  }
+}

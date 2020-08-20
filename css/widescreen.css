@@ -1,0 +1,30 @@
+#about {
+  flex-direction: row;
+}
+
+#about #about-ceo .card-grey {
+  flex-direction: row;
+}
+
+#about #about-ceo div img {
+  width: 100px;
+}
+
+#about #about-ceo .card-grey div a {
+  margin-bottom: 1.5rem;
+}
+
+#about .testimonial .testimonial-flex {
+  align-items: center;
+  justify-content: center;
+}
+
+#portfolio div .img-width {
+  width: 200px;
+  height: 200px;
+}
+
+/* map flex */
+#contact .map {
+  flex: 2;
+}
