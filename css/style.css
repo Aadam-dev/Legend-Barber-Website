@@ -318,10 +318,18 @@ p {
 }
 
 /* section: footer */
+#footer {
+  padding: 0.2rem 0;
+}
 #footer i {
   background-color: #f1a792;
   color: #fff;
   padding: 1rem;
   border-radius: 50%;
   margin-top: 0.75rem;
+}
+
+#footer p {
+  margin: 0;
+  padding-top: 0.5rem;
 }
