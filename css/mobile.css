@@ -1,3 +1,11 @@
+#navbar {
+  padding: 0.5rem;
+}
+
+#navbar .logo {
+  margin-bottom: 0.5rem;
+}
+
 #navbar ul {
   align-items: center;
   justify-content: center;
@@ -72,7 +80,7 @@
 
   #navbar .logo {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   #navbar ul li a {
@@ -120,6 +128,12 @@
   }
 }
 
+@media (max-width: 376px) {
+  #contact .card form > div label {
+    padding: 0.7rem;
+  }
+}
+
 @media (max-width: 360px) {
   #about .testimonial .testimonial-flex {
     flex-direction: column;
@@ -131,5 +145,15 @@
     justify-self: center;
     align-self: center;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #contact .card form > div label {
+    padding: 0.6rem;
+  }
+
+  #contact form > div {
+    font-size: 0.55rem;
   }
 }

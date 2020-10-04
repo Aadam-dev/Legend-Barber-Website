@@ -293,6 +293,8 @@ p {
 
 #contact #form-group {
   display: block;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 #contact #form-group input {
